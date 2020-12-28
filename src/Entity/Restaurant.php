@@ -54,6 +54,7 @@ class Restaurant
     {
         $this->restaurantPictures = new ArrayCollection();
         $this->reviews = new ArrayCollection();
+        $this ->setCreatedAt(new\DateTime());
     }
 
     public function getId(): ?int

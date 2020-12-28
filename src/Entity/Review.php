@@ -53,6 +53,7 @@ class Review
     public function __construct()
     {
         $this->childs = new ArrayCollection();
+        $this ->setCreatedAt(new\DateTime());
     }
 
     public function getId(): ?int
